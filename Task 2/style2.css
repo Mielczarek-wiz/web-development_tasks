@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Verdana;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+html, body, p {
+  margin: 0;
+  padding: 0;
+}
+
+body > div > header {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  align-items: center;
+}
+body > div > header h1 {
+  margin-left: 15px;
+  font-size: 32px;
+  font-weight: bold;
+}
+body > div > header nav {
+  flex-grow: 32px;
+  align-self: flex-start;
+  display: flex;
+  justify-content: flex-end;
+}
+body > div > header nav a {
+  width: 75px;
+}
+
+div > main {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+div > main article {
+  margin: 15px;
+  width: 100%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+div > main article header {
+  height: 50px;
+  width: 50%;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  background-color: #CCC;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+div > main article p {
+  text-align: justify;
+  padding: 15px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  background-color: #CCC;
+  border-top: 2px solid black;
+  margin-top: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 32px;
+  background-color: #CCC;
+  color: #111;
+  border-radius: 50px;
+  height: 75px;
+  width: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.content {
+  min-height: 100%;
+}
+
+html, body {
+  height: 100%;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media all and (max-width: 900px) {
+  header {
+    justify-content: space-between;
+  }
+  header h1 {
+    display: none;
+  }
+  header nav {
+    display: none !important;
+  }
+  header .hamburger {
+    display: block;
+    border: 2px solid black;
+    border-end-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-start-start-radius: 10px;
+    border-end-end-radius: 10px;
+    background-color: #CCC;
+    padding: 10px;
+    padding-top: 3px;
+    padding-bottom: 15px;
+    font-weight: bold;
+  }
+  header .hamburger:hover {
+    display: block;
+    border: 2px solid blue;
+    border-end-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-start-start-radius: 10px;
+    border-end-end-radius: 10px;
+    background-color: #CCC;
+    padding: 10px;
+    padding-top: 3px;
+    padding-bottom: 15px;
+    font-weight: bold;
+  }
+
+  main {
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=style2.css.map */

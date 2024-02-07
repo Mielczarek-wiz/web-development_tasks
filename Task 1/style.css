@@ -1,0 +1,33 @@
+li { list-style-type: square; }
+#cena {
+	color:red; 
+	font-weight: bold;
+}
+.wstęp{
+	font-style: italic;
+}
+td > img{
+	border-style: solid;
+	border-color: blue;
+}
+td > img:hover{
+	border-style: solid;
+	border-color: red;
+}
+h1+h2{
+	letter-spacing: 5px;
+}
+td[colspan="2"]{
+	font-size: small;
+}
+p+p{
+	color: grey;
+}
+body{
+	margin: 5em 10em 5em 10em;
+	background-image: url(słoneczko.png);
+	background-repeat: repeat-y;
+}
+h1 { color: green; }
+* { font-family: Tahoma; }
+p { text-align: justify; }
